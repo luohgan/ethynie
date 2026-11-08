@@ -3,23 +3,249 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Le retour des dieux</title>
-  <meta name="description" content="Saga de fantasy en sept tomes dans le monde d'Ethynie, par Stéphane Jeanneteau.">
-  <style>
-    :root { --bg: #14121a; --fg: #ece6d8; --accent: #c9a25b; --muted: #a59f92; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg); font-family: Georgia, "Times New Roman", serif; padding: 16px; text-align: center; }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 .5rem; color: var(--accent); letter-spacing: .02em; }
-    p { margin: .25rem 0; color: var(--muted); font-size: 1.1rem; }
-    .soon { margin-top: 2rem; font-style: italic; }
-  </style>
+  <title>Le Retour des Dieux · Saga de fantasy épique en sept tomes</title>
+  <meta name="description" content="La première saga épique construite sur les mythologies oubliées du monde entier, pas sur l'Europe médiévale. Sept tomes disponibles, par Stéphane Jeanneteau.">
+  <meta name="theme-color" content="#14121a">
+  <link rel="alternate" hreflang="fr" href="https://ethynie.netlify.app/">
+  <link rel="alternate" hreflang="en" href="https://ethynie.netlify.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ethynie.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Le Retour des Dieux · Saga d'Ethynie">
+  <meta property="og:description" content="La première saga épique construite sur les mythologies oubliées du monde entier. Sept tomes disponibles.">
+  <meta property="og:image" content="https://ethynie.netlify.app/img/aube-chemin.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main>
-    <h1>Le retour des dieux</h1>
-    <p>Une saga de fantasy en sept tomes dans le monde d'Ethynie</p>
-    <p>par Stéphane Jeanneteau</p>
-    <p class="soon">Site en construction</p>
+<body id="haut">
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <section class="hero" aria-label="Présentation">
+    <img class="hero__bg" src="img/aube-chemin.jpg" alt="" fetchpriority="high">
+    <div class="hero__veil"></div>
+
+    <header class="header">
+      <a class="brand" href="#haut">
+        <span class="brand__name">Le Retour des Dieux</span>
+        <span class="brand__sub">Saga d'Ethynie</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#haut" aria-current="page">Accueil</a>
+        <a href="#tomes">Les tomes</a>
+        <a href="#ethynie">Ethynie</a>
+        <a href="#auteur">L'auteur</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header__tools">
+        <details class="lang">
+          <summary aria-label="Choisir la langue">FR <span aria-hidden="true">▾</span></summary>
+          <ul>
+            <li><span aria-current="true">Français</span></li>
+            <li><a href="en/" lang="en" hreflang="en">English</a></li>
+          </ul>
+        </details>
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <span class="eyebrow">Saga complète · Sept tomes</span>
+      <h1>Le Retour<br>des Dieux</h1>
+      <p class="hero__promise">La première saga épique construite sur les mythologies oubliées du monde entier, pas sur l'Europe médiévale.</p>
+      <div class="ctas">
+        <a class="btn btn--glow" data-amazon="t1" href="#tomes">Lire les premières pages</a>
+        <a class="link" data-amazon="t1" href="#tomes">Premier chapitre offert <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <main id="contenu">
+    <section class="section" aria-labelledby="premisse-titre">
+      <div class="wrap split">
+        <figure class="figure">
+          <img src="img/voleur-toits.jpg" alt="Un jeune voleur bondit sur les toits de Shurapan" loading="lazy">
+          <figcaption>Les toits de Shurapan</figcaption>
+        </figure>
+        <div class="stack">
+          <span class="eyebrow">La prémisse</span>
+          <h2 id="premisse-titre">Et si les dieux que vous priez avaient faim&nbsp;?</h2>
+          <p>Dans le monde d'Ethynie, les dieux ne sont pas des légendes. Ils ont faim, et la seule chose qui les nourrit est la foi des mortels, dont ils se sont eux-mêmes coupés il y a trois siècles.</p>
+          <p class="muted">Shaheen n'est qu'un jeune voleur de Shurapan, hanté par la mort des siens. Mais il porte quelque chose que les dieux reconnaissent, quelque chose qui pourrait réconcilier les peuples divisés d'Ethynie, ou les détruire.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight-top" aria-label="Pourquoi lire la saga">
+      <div class="wrap args">
+        <div class="arg">
+          <img src="img/falaises-volarys.jpg" alt="Cités accrochées aux falaises au-dessus des nuages" loading="lazy">
+          <h3>Les mythologies du monde entier</h3>
+          <p>Andes, Australie aborigène, Japon médiéval, Afrique de l'Ouest, Himalaya : Ethynie puise aux sources que la fantasy a oubliées.</p>
+        </div>
+        <div class="arg">
+          <img src="img/bandeau-tomes.jpg" alt="Frise des peuples d'Ethynie" loading="lazy">
+          <h3>Une saga complète</h3>
+          <p>Les sept tomes sont disponibles. Aucune attente entre deux livres : l'histoire va jusqu'à son terme.</p>
+        </div>
+        <div class="arg">
+          <img src="img/medaillon.jpg" alt="Un médaillon lumineux dans une main" loading="lazy" style="object-position:30% 40%">
+          <h3>Aucune magie sans prix</h3>
+          <p>Pas de héros sans failles. Pas de magie sans prix. Pas d'espoir sans sacrifice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tomes" id="tomes" aria-labelledby="tomes-titre">
+      <div class="tomes__inner">
+        <div class="tomes__head">
+          <span class="eyebrow">Ordre de lecture</span>
+          <h2 id="tomes-titre">Sept tomes, une seule histoire</h2>
+          <p>L'espoir n'est pas un don. C'est un combat, et il se mène sur sept livres.</p>
+        </div>
+        <div class="tomes__scroll">
+          <ol class="tomes__list">
+            <li><a class="tome" data-amazon="t1" href="#tomes">
+              <img src="covers/fr/t1.jpg" alt="Couverture du tome 1, Le porteur d'âme" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome I</span>
+              <span class="tome__title">Le porteur d'âme</span>
+              <span class="tome__line">L'espoir n'est pas un don. C'est un combat.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t2" href="#tomes">
+              <img src="covers/fr/t2.jpg" alt="Couverture du tome 2, Le pont des âmes" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome II</span>
+              <span class="tome__title">Le pont des âmes</span>
+              <span class="tome__line">Chaque pont a son prix.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t3" href="#tomes">
+              <img src="covers/fr/t3.jpg" alt="Couverture du tome 3, Les âmes en cendres" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome III</span>
+              <span class="tome__title">Les âmes en cendres</span>
+              <span class="tome__line">L'heure du choix a sonné.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t4" href="#tomes">
+              <img src="covers/fr/t4.jpg" alt="Couverture du tome 4, L'âme sous les cieux brisés" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome IV</span>
+              <span class="tome__title">L'âme sous les cieux brisés</span>
+              <span class="tome__line">L'espoir refuse de mourir.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t5" href="#tomes">
+              <img src="covers/fr/t5.jpg" alt="Couverture du tome 5, Le pacte des âmes" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome V</span>
+              <span class="tome__title">Le pacte des âmes</span>
+              <span class="tome__line">Les dieux réclament leur dû.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t6" href="#tomes">
+              <img src="covers/fr/t6.jpg" alt="Couverture du tome 6, L'héritage des âmes" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome VI</span>
+              <span class="tome__title">L'héritage des âmes</span>
+              <span class="tome__line">Certaines guerres ne se gagnent pas.</span>
+            </a></li>
+            <li><a class="tome" data-amazon="t7" href="#tomes">
+              <img src="covers/fr/t7.jpg" alt="Couverture du tome 7, Le prix des âmes" width="800" height="1200" loading="lazy">
+              <span class="tome__num">Tome VII</span>
+              <span class="tome__title">Le prix des âmes</span>
+              <span class="tome__line">Chaque âme a son prix.</span>
+            </a></li>
+          </ol>
+        </div>
+        <div class="ctas">
+          <a class="btn" data-amazon="t1" href="#tomes">Commencer par le tome I</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ethynie" aria-labelledby="monde-titre">
+      <div class="wrap split">
+        <div class="stack">
+          <span class="eyebrow">Le monde d'Ethynie</span>
+          <h2 id="monde-titre">Des peuples que tout oppose</h2>
+          <p class="muted">Des falaises des Volarys aux tunnels des Sorwyns, chaque territoire porte l'empreinte des dieux qui l'ont façonné, et des peuples qui s'y sont réfugiés.</p>
+          <ul class="peoples">
+            <li>Volarys</li>
+            <li>Sorwyns</li>
+            <li>Elfes d'Amil Filul</li>
+            <li>Draconis</li>
+            <li>Nivéens</li>
+            <li>Royaumes humains</li>
+          </ul>
+          <a class="link link--or" href="img/carte.jpg">Explorer la carte <span aria-hidden="true">→</span></a>
+        </div>
+        <img class="map" src="img/carte.jpg" alt="Carte du monde d'Ethynie" loading="lazy">
+      </div>
+    </section>
+
+    <section class="quote" aria-label="Citation">
+      <img class="quote__bg" src="img/arbre-fleur.jpg" alt="" loading="lazy">
+      <div class="quote__veil"></div>
+      <figure>
+        <blockquote>«&nbsp;Même dans les endroits les plus sombres, la beauté existe.&nbsp;»</blockquote>
+        <figcaption>Le Retour des Dieux</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="auteur" aria-labelledby="auteur-titre">
+      <div class="author">
+        <div class="author__photo" role="img" aria-label="Photo de Stéphane Jeanneteau">Photo de l'auteur</div>
+        <div class="stack">
+          <span class="eyebrow" id="auteur-titre">L'auteur</span>
+          <p class="author__quote">«&nbsp;J'ai porté Le Retour des Dieux pendant plus de vingt-cinq ans avant d'oser l'écrire. Une promesse faite à mes enfants.&nbsp;»</p>
+          <span class="author__name">Stéphane Jeanneteau</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact" aria-labelledby="newsletter-titre">
+      <img class="newsletter__bg" src="img/bandeau-monde.jpg" alt="" loading="lazy">
+      <div class="newsletter__veil"></div>
+      <div class="newsletter__inner">
+        <h2 id="newsletter-titre">Rejoindre le Conseil d'Ethynie</h2>
+        <p class="muted">Parutions, traductions et coulisses de l'écriture. Une lettre rare, jamais de publicité.</p>
+        <form name="newsletter" method="POST" action="/merci.html" data-netlify="true" netlify-honeypot="site-web">
+          <input type="hidden" name="form-name" value="newsletter">
+          <input type="hidden" name="langue" value="fr">
+          <p class="hp"><label>Ne pas remplir <input name="site-web" tabindex="-1" autocomplete="off"></label></p>
+          <input type="email" name="email" required autocomplete="email" aria-label="Adresse e-mail" placeholder="Votre adresse e-mail">
+          <button class="btn" type="submit">Rejoindre</button>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <nav aria-label="Pied de page">
+          <a href="#tomes">Les tomes</a>
+          <a href="#ethynie">Ethynie</a>
+          <a href="#auteur">L'auteur</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a data-social="tiktok" href="#">TikTok</a>
+          <a data-social="youtube" href="#">YouTube</a>
+          <a data-social="instagram" href="#">Instagram</a>
+          <a data-social="facebook" href="#">Facebook</a>
+        </div>
+      </div>
+      <div class="footer__langs">
+        <span aria-current="true">Français</span>
+        <a href="en/" lang="en" hreflang="en">English</a>
+      </div>
+      <div class="footer__legal">
+        <span>© 2026 Stéphane Jeanneteau</span>
+        <span>Illustrations © Eduardo Comettant</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
